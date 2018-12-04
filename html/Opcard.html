@@ -1,0 +1,240 @@
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Open Card</title>
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/opcard.css">
+    
+</head>
+
+    <nav class="navbar navbar-expand-md bg-light navbar-fixed-top">
+  <div class="container">
+ <a class="navbar-brand" href="#"> <span class="logo">تطعيم</span>
+ <img src="../img/baby-drinking-icon.png" class="img">
+<span class="s-logo">الاطفال</span></a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" data-target="#collapsibleNavbar">
+ 
+<span><i class="fa fa-bars" aria-hidden="true"></i></span>
+ </button>
+<div class="collapse navbar-collapse" id="collapsibleNavbar">
+<ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown" id="">
+                <a href="" class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown">
+                    تواصل معنا
+                </a>
+                <div class="dropdown-menu" style="background-color: #ffffff;border:none;height:50px">
+                <a href="https://www.facebook.com/Code4Iraq" class="dropdown-item">
+                    <i class="fa fa-facebook-square" aria-hidden="true" style="color:#5C6BC0"></i></a>
+                </div>
+                </li>     
+<li class="nav-item ">
+<a class="nav-link" href="about.html" class="a-color">من نحن</a>
+ </li>    
+  <li class="nav-item ">
+  <a class="nav-link" href="baby.html" class="a-color" id="data">بيانات الاطفال</a>
+  </li>     
+     <li class="nav-item " id="creat">
+      <a class="nav-link" href="CreatCard.html" class="a-color" id="new">انشاء كارت</a>
+     </li> 
+     <li class="nav-item " id="open">
+     <a class="nav-link" href="Opcard.html" class="a-color"  id="old">فتح كارت</a>
+      </li>                                  
+    <li class="nav-item ">
+      <a class="nav-link" href="index.html">الرئيسيه</a>
+                </li>
+              </ul>
+            </div> 
+           </div>
+          </nav>
+    
+<body>
+ 
+<div class="up">
+    
+<div class="main">
+    <!--start of front-->
+<div class="front">       
+<form action="">
+ <input type="text" placeholder="الاسم الثلاثي للطفل">
+ <input type="text" placeholder="اسم مركز الرعايه الصحيه">
+<!-- birth date-->
+<div class="radio">
+<input type="radio" name="gender" id="one">
+  <label for="one" id="first"> انثى</label>
+  
+    <input type="radio" id="two" name="gender" />
+
+    <label for="two" id="second"> ذكر</label>
+</div>
+
+<input type="text" placeholder="اسم الام">
+<input type="text" placeholder="تاريخ الولاده">
+<input type="text" placeholder="مدينه">
+<input type="text" placeholder="رقم الطفل في السجل الدائمي">
+<input type="text" placeholder="حي">
+ <input type="text" placeholder="محله">
+<input type="text" placeholder="زقاق">
+<input type="text" placeholder="دار">
+<input type="tel" placeholder="رقم الهاتف">
+ <input type="text" placeholder="اسم المختار">
+ <div class="movBtn">
+<button type="submit" class="go" id="gone">اكمل البيانات</button>
+<button type="submit" class="go" onclick="save()">حفظ البيانات</button>
+<button type="submit" class="go"> <a href="index.html" style="text-decoration:none;color:white;">رجوع</a></button>
+</div>
+ </form>
+</div>
+     <!--End of front-->
+<!--srart of back--> 
+
+<div class="table">
+        <table border="2px">
+            <thead>
+            <tr>
+      <th class="date">موعد التلقيح القادم</th>
+      <th class="date">تاريخ اخذ القاح</th>
+     <th class="date">موعد اعطاء االقاح</th>
+     <th class="type">اللقاح
+        <i class="fa fa-share" aria-hidden="true" id="arrow" style="float:right;font-size: 25px;padding-right: 5px"></i>
+     </th>
+     </tr>
+    </thead>
+       <tr>
+           <td class="date"><input type="text" name=""></td>
+           <td class="date"><input type="text" name=""></td>
+           <td class="date">خلال 24 ساعه بعد الولاده</td>
+           <td class="type">
+               بي سي جي/التهاب الكبد الفيروسي نمط ب أ جرعه اولى
+               /    شلل الاطفال الفموي - جرعه الصغر
+           </td>
+       </tr> 
+       <tr>
+            <td class="date"><input type="text" name=""></td>
+            <td class="date"><input type="text" name="" ></td>
+            <td class="date">عمر شهرين</td>
+            <td class="type">
+                    شلل الاطفال الفموي - جرعه اولى /
+                    الفايروسي الدوار - جرعه اولى /
+                    السداسي اللاخلوي - جرعه اولى /
+                    لقاح المكورات الرئويه المقترن - جرعه
+            </td>      
+       </tr>
+       <tr>
+            <td class="date"><input type="text" name="" ></td>
+            <td class="date"><input type="text" name="" ></td>
+            <td class="date">عمر اربعه اشهر</td>
+            <td class="type">
+                    شلل الاطفال الفموي - جرعه ثانيه/
+                    الفايروسي الدوار - جرعه ثانيه/
+                    السداسي اللاخلوي - جرعه ثانيه/
+                لقاح المكورات الرئويه المقترن - جرعه 
+            </td>      
+       </tr>
+       <tr>
+            <td class="date"><input type="text" name="" ></td>
+            <td class="date"><input type="text" name="" ></td>
+            <td class="date">سته اشهر</td>
+            <td class="type">
+               شلل الاطفال الفموي - جرعه ثالثه/
+               الفايروسي الدوار - جرعه ثالثه/
+               السداسي اللاخلوي - جرعه ثالثه/
+               لقاح المكورات الرئويه المقترن - جرعه ثالثه ثانيه
+            </td>      
+       </tr>
+       <tr>
+            <td class="date"><input type="text" name="" ></td>
+            <td class="date"><input type="text" name=""></td>
+            <td class="date">تسعه اشهر</td>
+            <td class="type">
+                الحصبه المنفرده<br>
+                فيتامين A 100 الف وحده عاليه
+            </td>     
+       </tr>
+       <tr>
+            <td class="date"><input type="text" name="" ></td>
+            <td class="date"><input type="text" name="" ></td>
+            <td class="date">خمسه عشر شهر</td>
+            <td class="type">
+       الحصبه المختلطه MMR جرعه اولى
+            </td>      
+       </tr>
+       <tr>
+            <td class="date"><input type="text" name="" ></td>
+            <td class="date"><input type="text" name=""></td>
+            <td class="date">ثمانيه عشر اشهر</td>
+            <td class="type">
+                شلل الاطفال الفموي جرعه منشطه اولى/الخماسي اللاخلوي جرعه منشطه اولى/
+                فيتامين A 200 الف وحده عاليه
+            </td>      
+       </tr>
+       <tr>
+            <td class="date"><input type="text" name=""></td>
+            <td class="date"><input type="text" name=""></td>
+            <td class="date">من عمر 4-6 سنوات</td>
+            <td class="type">
+                شلل الاطفال الفموي-جرعه منشطه ثانيه/الرباعي اللاخلوي-جرعه منشطه ثانيه
+                /حصبه مختلطهMMR-جرعه ثانيه
+            </td>      
+       </tr>
+        </table>
+    </div>
+    <!--End of back--> 
+</div>
+
+<div class="form">
+        <header>
+        <span>بطاقه اللقاحات الوطنيه للاطفال<img src="../img/face.png" alt="" class="imgH"> في العراق</span>
+        </header>
+<img src="../img/baby.jpg" alt="" class="formImg">
+<div class="login">
+ <form>
+<label for="number" >الرقم الصحي للطفل</label>
+<input type="text" id="number" autocomplete="off" 
+ required class="solv">
+ <label for="name"  >اسم الطفل الثلاثي</label>
+  <input type="text" id="name" autocomplete="off" required class="solv">
+<button type="submit" class="btn2" id="submits">فتح دفتر اللقاح</button>
+</form>
+</div>
+</div>
+</div>
+
+
+<div class="bg" id="model">
+
+    <div  class="second">
+      <div class="close" id="closed">+</div>
+    <img src="../img/doctor.jpg" alt="doctor" class="img-style"><br><br>
+  
+      <p style="font-family:cursive">Dr. LogIn Information</p>
+     <form class="input">
+    <div class="form-group has-feedback">
+     <input type="text" placeholder="type your name" name="username"
+      required class="form-control" autocomplete="off" class="input">
+    <span class="glyphicon glyphicon-user form-control-feedback"  class="icon"></span>
+      </div>
+       <div class="form-group has-feedback">
+      <input type="password" placeholder="type your password" name="password" 
+       required class="form-control" autocomplete="off" class="input">
+         <span class="glyphicon glyphicon-lock form-control-feedback"  class="icon"></span>
+     </div>
+        <div>
+   <button type="submit"class="btn btn-primary" class="input">
+     <a href="" id="login">LogIn</a>
+  </button>
+         </div>      
+        </form>
+         <section> <a href="" style="font-family:cursive ">Forget Password?</a> </section>
+        
+        </div>
+  </div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="../static/js/bootstrap.min.js"></script> 
+<script src="../js/opcard.js"></script>
+<script src="../js/main.js"></script>
+</body>

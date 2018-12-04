@@ -1,0 +1,252 @@
+.bg{
+    width:100%;
+    height:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,.7);
+
+}
+.logo{
+ 
+    color:pink;
+    font-size: 25px;
+}
+.s-logo{
+    color:rgb(99, 177, 230);
+    font-size: 25px;
+}
+.navbar-brand {
+    display: flex;
+    padding-top: .3125rem;
+    padding-bottom: .3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+}
+.img{
+    width:50px;
+    height:50px;
+    margin-left: 5px;
+    margin-right: -2px;
+}
+.close{
+    font-size: xx-large;
+    right:10px;
+    top:5px;
+    transform: rotate(45deg);
+}
+nav li{
+    font-style:normal;
+    text-decoration: none;
+    
+}
+nav li a{
+    font-size: 22px;
+    color:rgb(96, 111, 197);
+    font-weight: normal;
+   }
+   nav li a:hover{
+border-bottom:1px solid rgb(96, 111, 197);
+   }
+   
+p{
+    font-size: x-large;
+}
+
+.second{
+    width: 350px;
+    height: 500;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    padding-right:15px;
+    padding-left: 15px;
+   color:rgb(49, 137, 252);
+}
+.second input{
+  color:rgb(49, 137, 252);
+    font-size: large;
+    font-family: cursive;
+    text-transform: capitalize;
+}
+.img-style{
+    width:150px;
+    height:150px;
+    border-radius: 80%;
+    margin-top:20px;
+ 
+}
+a{
+    font-size: x-large;
+    margin-bottom: 10px;
+ 
+}
+.btn{
+    width:200px;
+    margin-top: 15px;
+    font-size: 20px;
+    border-radius: 20px;
+   
+}
+.btn a{
+    font-size: 25px;
+    text-decoration: none;  
+    color:white;
+    font-family: cursive;
+}
+
+.input{
+    top: -200px;
+    animation-name: main;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+  }
+  @keyframes main{
+      from{
+      margin-top: -200px;
+      }
+      to{
+      margin-top: 30px;
+      }
+  }
+.body{
+    position: absolute;
+    width:100%;
+    margin-top: 5px;
+    font-size: xx-large;
+    background-color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.body img{
+    margin-top: 5px;
+    width:100%;
+    height:20%;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.containt{
+    width:100%;
+    height:605px;
+    margin-top: 50px;
+    text-align: center;
+    padding-right: 20px;
+    padding-top: 10px;
+    color:#5C6BC0;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.containt p{
+    font-size: 20px;
+}
+.containt h1{
+    font-size: 31px;
+   color:pink;
+   font-weight:bolder;
+}
+.overview{
+    padding-top: 20px;
+    padding-bottom: 100px;
+    background: rgb(245, 245, 245);
+    width:100%;
+    margin-top: 60px;
+}   
+.overview h2{
+    color:pink;
+    font-size: 32px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+   
+}
+.overview p{
+    color:#5C6BC0;
+    font-weight: 25px;
+    line-height: 3;
+    width:80%;
+    margin: auto;
+}
+
+hr{
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+}
+
+footer{
+position: absolute;
+width:100%;
+top:1800px;
+background-color: rgb(108, 116, 163);
+color:white;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 23px;
+}
+
+@media(max-width:1000px){
+    nav li a{
+    font-size: 15px;
+    }
+}
+@media(max-width:1440px){
+    footer{
+        top:2250px;
+        padding: 20px;
+      }}
+      @media(max-width:1380px) {
+        footer{
+              top:1860px;
+              padding: 20px;
+          }}
+      @media(max-width:1000px){
+        footer{
+              top:2800px;
+              padding: 20px;
+          }}
+
+@media(max-width:1200px){
+    footer{
+      top:2320px;
+          padding: 20px;
+      }}
+
+@media(max-width:768px){
+    footer{
+          top:2200px;
+          padding: 20px;
+      }
+
+    span{
+        font-size: 25px;
+        font-style: oblique;
+        display: flex;
+        justify-content:center;
+    }
+    .img{
+        width:50px;
+        height:50px;
+    }
+}
+@media(max-width:375px){
+    footer{
+          top:3100px;
+          padding: 20px;
+      }}
+      
+
+        
+   
+/**/

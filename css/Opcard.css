@@ -1,0 +1,442 @@
+.bg{
+    width:100%;
+    height:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,.7);
+    z-index: 2;
+}
+
+.close{
+    font-size: xx-large;
+    right:10px;
+    top:5px;
+    transform: rotate(45deg);
+}
+
+.second{
+    width: 350px;
+    height: 500;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    padding-right:15px;
+    padding-left: 15px;
+   color:rgb(49, 137, 252);
+}
+.second input{
+  color:rgb(49, 137, 252);
+    font-size: large;
+    font-family: cursive;
+    text-transform: capitalize;
+}
+
+.img-style{
+    width:150px;
+    height:150px;
+    border-radius: 80%;
+    margin-top:20px;
+ 
+}
+a{
+    font-size: x-large;
+    margin-bottom: 10px;
+ 
+}
+.btn{
+    width:200px;
+    margin-top: 15px;
+    font-size: 20px;
+    border-radius: 20px;
+   
+}
+.btn a{
+    font-size: 25px;
+    text-decoration: none;  
+    color:white;
+    font-family: cursive;
+}
+
+.input{
+    top: -200px;
+    animation-name: main;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+  }
+  @keyframes main{
+      from{
+      margin-top: -200px;
+      }
+      to{
+      margin-top: 30px;
+      }
+  }
+body{
+    /*background: ##ECEFF1;*/
+   background: #F5F5F5;
+}
+.logo{
+ 
+    color:pink;
+    font-size: 25px;
+}
+.s-logo{
+    color:rgb(99, 177, 230);
+    font-size: 25px;
+}
+header{
+    margin:0;
+    width:100%;
+    height:60px;
+    text-align: center;
+    padding-top: 5px;
+    font-size: xx-large;
+    color:#5C6BC0;
+    text-shadow: 2px 2px 0px #ddd;
+    border-radius: 0 0 85% 85%/50%;
+}
+.imgH{
+    width:50px;
+    height:50px;
+    margin-bottom: 10px;
+}
+
+.img{
+    width:50px;
+    height:50px;
+    margin-left: 5px;
+    margin-right: -2px;
+}
+nav li{
+    font-style:normal;
+    text-decoration: none;
+    
+}
+nav li a{
+    font-size: 22px;
+    color:rgb(96, 111, 197);
+    font-weight: normal;
+   }
+   nav li a:hover{
+border-bottom:1px solid rgb(96, 111, 197);
+   }
+.up{
+    margin:15px auto;
+    width: 550px;
+    height:530px;
+    display: flex;
+    justify-content: center;
+    position:relative;
+    transform-style: preserve-3d;
+    transition: all 1s ease-in;
+    margin-top: -10px;
+}
+.main{    
+    background: white;
+    margin:15px auto;
+    width: 550px;
+    height:560px;
+    position:relative;
+    transform-style: preserve-3d;
+    transition: all 1s ease-in;
+    z-index:1;
+    display: hidden;
+}
+
+/*start of front*/
+.front{   
+    backface-visibility: hidden;
+    z-index:2;
+    position:absolute;
+    width:100%;
+    height:100%;
+    background-color: white;
+    padding: 20px;
+    padding-top: 50px;
+}
+input{
+    width:250px;
+    height:40px;
+    text-align: center;
+    font-size: x-large;
+    font-family: Arial, Helvetica, sans-serif;
+    color:rgb(49, 137, 252) ;
+    background: transparent;
+    outline: none;
+    border: 1px solid rgb(49, 137, 252);
+    margin-bottom: 10px;
+    }
+
+.radio input[type="radio"]{
+    display:none;
+}
+.radio{
+    text-align: center;
+}
+.radio label{
+    color:#5C6BC0;
+    font-size: 25px;
+    position: relative;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+.radio label:before{
+    content: "";
+    width:20px;
+    height:20px;
+    border-radius: 50%;
+    border:3px solid #5C6BC0;
+    display: inline-block;
+}
+.radio input[type="radio"]:checked + label{
+transform: translateX(-10px);
+background:rgba(0,0,0,.1);
+
+}
+.radio input[type="radio"]:checked + label:before{
+display:none;
+}
+    .go{
+        width:120px;
+        height:50px;
+        background-color: #5C6BC0;
+        color:white;
+        animation: move .5s linear forwards;
+        border-radius: 10px;
+        margin-top: 5px;
+        font-size: 20px;
+    } 
+    .go:hover{
+        transform: scale(1.1)
+    }
+    /*end of front*/  
+
+    /*start of back*/
+    .table{      
+        backface-visibility: hidden;
+        background-color: rgb(175, 114, 233);
+        position: absolute;
+        width:100%;
+        height:100%;
+        
+        overflow-y:auto;
+    }    
+.table{
+    z-index: 1;
+    transform: rotateY(180deg);
+
+}
+    .table table{
+        background: white;
+        color:#5C6BC0;
+        width:100%;
+        height:100%;
+        top:0;
+    }
+    .table input{
+        width:80px;
+    }
+    
+    table,th,td{
+        border:1px solid black;
+        
+    }
+    .date{
+        padding: 2px;
+    }
+    .type{
+        width:48%;
+        right:0;
+    }
+    th{
+        text-align: center;
+        padding: 1px;
+    }
+    td{
+      padding: 1px;
+    }
+    /*end of back*/
+.form{
+        position: absolute;
+        height:100%;
+        width:100%;
+        background: white;
+        z-index: 2;
+        margin-top:15px;
+ }
+
+ .login{
+     position:relative;
+     padding-right: 10px;
+     padding-left: 10px;
+     padding-top: 20px;
+ }
+.login input{
+    width:100%;
+    font-size: x-large;
+    font-family: Arial, Helvetica, sans-serif;
+    color:black ;
+    outline: none;
+    border:none;
+    margin-bottom: 35px;
+    border-bottom: 1.3px solid #5C6BC0;
+    text-align: right;
+ }
+.login label{
+    position: absolute;
+    right:15px;
+    margin-top: -15px;
+    font-size:20px;
+    transition:all .5s ease-out;
+ }
+
+ .btn2{
+    width:300px;
+    height:60px;
+    border-radius: 50px;
+    background-color: #5C6BC0;
+    color:white;
+    font-size: xx-large;
+    position: absolute;
+    top: 180px;
+    left:50%;
+    transform: translate(-50%);
+ }
+ .btn:hover{
+  color:white;
+ }
+    .formImg{
+        width:100%;
+        height:200px;
+        margin-bottom: 50px;
+      
+    }
+    .movBtn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+@media (max-width:500px){
+ 
+    .main{    
+        background: white;
+        margin:30px auto;
+        width: 100%;
+        height:530px;
+        position:relative;
+        transform-style: preserve-3d;
+        transition: all 1s ease-in;
+        z-index: 1;
+    }
+  
+    .front{   
+        backface-visibility: hidden;
+        z-index:2;
+        position:absolute;
+        width:100%;
+        height:100%;
+        background-color: white;
+        padding-top: 50px;
+    }
+    input{
+        width:40%;
+        height:30px;
+        text-align: center;
+        font-size: large;
+        font-family: Arial, Helvetica, sans-serif;
+        color:rgb(49, 137, 252) ;
+        background: transparent;
+        outline: none;
+        border: 1px solid rgb(49, 137, 252);
+        margin-bottom: 10px;
+        margin-left: 15px; 
+        margin-right: 10px;
+        }
+        .go{
+            width:70px;
+            height:50px;
+            background-color: #5C6BC0;
+            color:white;
+            animation: move .5s linear forwards;
+            border-radius: 10px;
+            margin-top: 5px;
+            font-size: 15px;
+        }
+ .table{
+            backface-visibility: hidden;
+            background-color: white;
+            position: absolute;
+            width:100%;
+            height:100%;
+            overflow: auto;
+  }   
+ .up{
+            margin:15px auto;
+            width: 100%;
+            height:530px;
+            display: flex;
+            justify-content: center;
+            position:relative;
+            transform-style: preserve-3d;
+            transition: all 1s ease-in;
+ }  
+
+                    
+ header{
+            margin-top:-10px;
+            margin-bottom: 30px;
+            padding-top: 0;
+            width:100%;
+            height:30px;
+            text-align: center;
+            font-size:20px;
+            color:#5C6BC0;
+ }     
+ .form{        
+    height:100%;
+    width:100%;
+    background: white;
+    z-index: 2;
+    margin-top:15px;
+    padding: 10px;
+}   
+.login label{
+    right:15px;
+    font-size:20px;
+    margin-top: -25px;
+ }
+.login input{
+    width:100%;
+    font-size: x-large;
+    font-family: Arial, Helvetica, sans-serif;
+    color:black ;
+    outline: none;
+    border:none;
+    border-bottom: 1px solid #5C6BC0;
+    text-align: right;
+ }
+ .btn2{
+    width:200px;
+    height:50px;
+    border-radius: 50px;
+    background-color: #5C6BC0;
+    color:white;
+    font-size: x-large;
+    position: absolute;
+    left:50%;
+    transform: translate(-50%);
+ }
+ .btn:hover{
+  color:white;
+ }}
+ @media(max-width:1100px){
+ nav li a{
+    color:rgb(96, 111, 197);
+    font-size:16px;
+    padding-right: 15px;
+   }
+}

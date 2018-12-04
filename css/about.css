@@ -1,0 +1,269 @@
+.bg{
+    width:100%;
+    height:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,.7);
+    z-index: 2;
+}
+
+.close{
+    font-size: xx-large;
+    right:10px;
+    top:5px;
+    transform: rotate(45deg);
+}
+
+.second{
+    width: 350px;
+    height: 500;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    padding-right:15px;
+    padding-left: 15px;
+   color:rgb(49, 137, 252);
+}
+.second input{
+  color:rgb(49, 137, 252);
+    font-size: large;
+    font-family: cursive;
+    text-transform: capitalize;
+}
+
+.img-style{
+    width:150px;
+    height:150px;
+    border-radius: 80%;
+    margin-top:20px;
+ 
+}
+a{
+    font-size: x-large;
+    margin-bottom: 10px;
+ 
+}
+.btn{
+    width:200px;
+    margin-top: 15px;
+    font-size: 20px;
+    border-radius: 20px;
+   
+}
+.btn a{
+    font-size: 25px;
+    text-decoration: none;  
+    color:white;
+    font-family: cursive;
+}
+
+.input{
+    top: -200px;
+    animation-name: main;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+  }
+  @keyframes main{
+      from{
+      margin-top: -200px;
+      }
+      to{
+      margin-top: 30px;
+      }
+  }
+
+body{
+    background-color: #f5f5f5;
+
+}
+.img{
+    width:50px;
+    height:50px;
+    margin-left: 5px;
+    margin-right: -2px;
+}
+nav li{
+    font-style:normal;
+    text-decoration: none;
+    
+}
+nav li a{
+    font-size: 23px;
+    color:rgb(96, 111, 197);
+    font-weight: normal;
+   }
+   nav li a:hover{
+border-bottom:1px solid rgb(96, 111, 197);
+   }
+
+.logo{
+ 
+    color:pink;
+    font-size: 25px;
+}
+.s-logo{
+    color:rgb(99, 177, 230);
+    font-size: 25px;
+}
+
+.containt{
+    width:70%;
+    height:540px;
+    background-color: bisque;
+    display: flex;
+    margin:15px auto;
+}
+article{
+    width:65%;
+    height:100%;
+    background-color: white;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    /*box-shadow: 3px -3px 8px #5C6BC0,
+                0px 3px 8px #5C6BC0;*/
+                position:relative;
+}
+article p{
+   font-style: initial;
+   font-size: 18px;
+   line-height:35px;
+   color:#5C6BC0;
+   
+}
+article h1{
+text-transform:capitalize;
+text-align: end;
+right:5px;
+color:rgb(54, 20, 110);
+font-size: 22px;
+}
+section{
+    width:45%;
+    height:100%;
+    background-color: #5C6BC0;
+    padding-right: 10px;
+    padding-left: 10px;
+    position: relative;
+
+}
+article span{
+    font-size: 30px;
+    font-style:oblique;
+    word-spacing:5px;
+    color:#5C6BC0;
+    text-shadow:2px 2px 1px rgb(166, 170, 190);
+}
+
+section p{
+    font-style: oblique;
+    font-family: Georgia;
+    font-size: xx-large;
+    font-weight:bold;
+    color:white;
+    text-align: center;
+   transform: translate(0,50%);
+   word-spacing: 5px;
+   letter-spacing:5px;
+}
+.l-img{
+width:100%;
+height:350px;
+transform: translate(0,10%);
+
+}
+
+
+@media(max-width:1350px){
+    .containt{
+        height:660px;
+    }
+article span{
+    font-size: 15px;
+}
+section p{
+ font-size: xx-large;
+    word-spacing: 1px;
+   transform: translate(0,60px);
+}
+.l-img{
+    width:100%;
+    height:350px;
+    transform: translate(0,30%);
+}
+nav li a{
+    color:rgb(96, 111, 197);
+    font-size:18px;
+    padding-right: 15px;
+   }
+
+}
+
+@media(max-width:1100px){
+    nav li{
+        font-size: 15px;
+        font-style:normal;
+        text-decoration: none;
+        
+    }
+    nav li a{
+        color:rgb(96, 111, 197);
+        font-weight: normal;
+       }
+    .containt{
+        width:90%;
+        height:800px;
+        margin:50px auto;
+        display: flex;   
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+    }
+    section{
+        width:100%;
+        height:300px;
+        background-color: #5C6BC0;
+        padding-right: 10px;
+        padding-left: 10px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 10px;
+    }
+    section p{
+        font-style: oblique;
+        font-family: cursive;
+        font-size: 18px;
+        color:white;    
+        text-align: center; 
+    }
+    .l-img{
+    width:200px;
+    height:200px;
+    border-radius: 50%;
+
+    }
+
+article{
+    width:100%;
+    height:500px;
+    background-color: white;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    position:relative;
+    overflow-y: auto;
+
+}
+
+}
+
+
+/*375*/

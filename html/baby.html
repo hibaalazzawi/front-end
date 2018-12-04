@@ -1,0 +1,134 @@
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Baby Data</title>
+<link rel="stylesheet" href="../static/css/bootstrap.min.css">
+<link rel="stylesheet" href="../static/css/font-awesome.min.css">
+<link rel="stylesheet" href="../css/baby.css">
+    </head>
+             <body>
+
+  <nav class="navbar navbar-expand-md bg-light navbar-fixed-top">
+   <div class="container">
+        <a class="navbar-brand" href="#">
+  <span class="logo">الاطفال</span>           
+      <img src="../img/baby-drinking-icon.png" class="img">           
+<span class="s-logo">تطعيم</span>
+ </a>
+                    
+ <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+ <span><i class="fa fa-bars" aria-hidden="true"></i></span>
+ </button>
+<div class="collapse navbar-collapse" id="collapsibleNavbar">
+<ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown" id="">
+                <a href="" class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown">
+                    تواصل معنا
+                </a>
+ <div class="dropdown-menu" style="background-color: #ffffff;border:none;height:50px">
+                <a href="https://www.facebook.com/Code4Iraq" class="dropdown-item">
+                    <i class="fa fa-facebook-square" aria-hidden="true" style="color:#5C6BC0"></i></a>
+                </div>
+                </li>     
+<li class="nav-item ml-1">
+<a class="nav-link" href="about.html" class="a-color">من نحن</a>
+</li>    
+  <li class="nav-item ml-1">
+  <a class="nav-link" href="baby.html" class="a-color" id="data">بيانات الاطفال</a>
+</li>     
+<li class="nav-item ml-1" id="creat">
+<a class="nav-link" href="CreatCard.html" class="a-color" id="new">انشاء كارت</a>
+</li> 
+ <li class="nav-item ml-1" id="open">
+ <a class="nav-link" href="Opcard.html" class="a-color"  id="old">فتح كارت</a>
+ </li>         
+ <li class="nav-item ml-1">
+    <a class="nav-link" href="index.html">الرئيسيه</a>
+     </li> </ul>
+ </div> 
+</div>
+</nav>
+                    
+   <div class="content">
+    <div class="head">
+        بيانات الاطفال
+    </div>
+<div class="main">
+
+<div class="both">
+        <p>عدد الاطفال الذي بدئوا جلسات اللقاح</p>
+        <div class="down">
+        <div class="result">totol</div>
+        <form action="" id="dates">
+        <input type="text" name="start" placeholder="ادخل التاريخ"></form>
+     </div>
+     </div>
+    
+     <div class="both">
+            <p>عدد الاطفال الذي انهوا جلسات اللقاح</p>
+            <div class="sdown">
+            <div class="finish">totol</div>
+            <input type="text" name="end" placeholder=" ادخل التاريخ" form="dates">
+         </div>
+         </div>
+   
+         <div class="both">
+                <p>عدد الاطفال الذي لم ينهوا جلسات اللقاح</p>
+                <div class="s2down">
+                <div class="complete">totol</div>
+                <input type="text" name="start" placeholder="ادخل التاريخ" form="dates">
+             </div>
+             </div>
+           
+             <div class="both">
+                    <p>عدد الاطفال الكلي الذي لم ينهوا جلسات اللقاح</p>
+                    <div class="down">
+                    <div class="total">totol</div>
+                 </div>
+                 </div>       
+</div>
+<div class="btn2">
+<input type="reset" value="مسح" id="delete" form="dates">
+<button type="button" class="" id="searching">
+    <span >  بحث </span></button>
+</div>
+</div>
+
+<div class="bg" id="model">
+
+    <div  class="second">
+      <div class="close" id="closed">+</div>
+    <img src="../img/doctor.jpg" alt="doctor" class="img-style"><br><br>
+  
+     <p style="font-family:cursive">Dr. LogIn Information</p>
+     <form class="input">
+     <div class="form-group has-feedback">
+     <input type="text" placeholder="type your name" name="username"
+      required class="form-control" autocomplete="off" class="input">
+     <span class="glyphicon glyphicon-user form-control-feedback"  class="icon"></span>
+     </div>
+     <div class="form-group has-feedback">
+     <input type="password" placeholder="type your password" name="password" 
+       required class="form-control" autocomplete="off" class="input">
+         <span class="glyphicon glyphicon-lock form-control-feedback"  class="icon"></span>
+     </div>
+        <div>
+   <button type="submit"class="btn btn-primary" class="input">
+     <a href="" id="login">LogIn</a>
+  </button>
+         </div>      
+        </form>
+         <section> <a href="" style="font-family:cursive ">Forget Password?</a> </section>
+        
+        </div>
+  </div>
+  
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="../static/js/bootstrap.min.js"></script>
+<script src="../js/baby.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>
